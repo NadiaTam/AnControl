@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/background2">
+
+    <Button
+        android:id="@+id/connectDevicePatient1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shapebutton2"
+        android:fontFamily="casual"
+        android:text="Connect Device"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/connectDevicePatient2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shapebutton2"
+        android:fontFamily="casual"
+        android:text="Connect Device"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shapebutton2"
+        app:layout_constraintLeft_toRightOf="@+id/connectDevicePatient1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_startMeasurement"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/startMeasurement"
+            android:layout_marginStart="17dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <Button
+            android:id="@+id/startMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageView_startMeasurement"
+            android:background="@android:color/transparent"
+            android:fontFamily="casual"
+            android:text="Start Measurement"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shapebutton2"
+        app:layout_constraintLeft_toRightOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/stopMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageView_startMeasurement"
+            android:background="@android:color/transparent"
+            android:fontFamily="casual"
+            android:text="Stop Measurement"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_startMeasurement"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@android:drawable/ic_media_pause" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_ConnectionStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="DISCONNECTED"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Patient 2 -->
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPatient2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shapebutton2"
+        app:layout_constraintLeft_toRightOf="@+id/connectDevicePatient2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_startMeasurement"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/startMeasurementPatient2"
+            android:layout_marginStart="17dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <Button
+            android:id="@+id/startMeasurementPatient2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="casual"
+            android:text="Start Measurement"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2Patient2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shapebutton2"
+        app:layout_constraintLeft_toRightOf="@+id/relativeLayoutPatient2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView_stopMeasurement"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@android:drawable/ic_media_pause" />
+
+        <Button
+            android:id="@+id/stopMeasurementPatient2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageView_stopMeasurement"
+            android:background="@android:color/transparent"
+            android:fontFamily="casual"
+            android:text="Stop Measurement"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_ConnectionStatusPatient2"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="DISCONNECTED"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/relativeLayout2Patient2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_StopService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="casual"
+        android:text="STOP SERVICE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutChartsPatient1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="0dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="310dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="620dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart5"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="310dp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart6"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="620dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_patient1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:text="Patient 1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textView_ConnectionStatus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_patient2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:text="Patient 2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/button_patient1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_PatientName"
+        android:layout_width="145dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nadia.epfl.com.ancontrol.PatientActivity">
+
+    <TextView
+        android:id="@+id/textView_PatientData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="Please fill in all the fields with informations about the patient:"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="casual"
+        android:text="Name:"
+        android:textColor="@color/primary_material_light_1"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PatientData" />
+
+    <TextView
+        android:id="@+id/textView_Surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="casual"
+        android:text="Surname:"
+        android:textColor="@color/primary_material_light_1"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Name" />
+
+    <TextView
+        android:id="@+id/textView_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="Date of birth:"
+        android:textColor="@color/primary_material_light_1"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Surname" />
+
+    <TextView
+        android:id="@+id/textView_PlaceBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="Place of Birth:"
+        android:textColor="@color/primary_material_light_1"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Age" />
+
+    <TextView
+        android:id="@+id/textView_Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="Gender:"
+        android:textColor="@color/primary_material_light_1"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PlaceBirth" />
+
+    <TextView
+        android:id="@+id/textView_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="casual"
+        android:text="Telephone Number:"
+        android:textColor="@color/primary_material_light_1"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Gender" />
+
+    <EditText
+        android:id="@+id/editText_Name"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_Name"
+        app:layout_constraintLeft_toRightOf="@+id/textView_Name" />
+
+    <EditText
+        android:id="@+id/editText_Surname"
+        android:text="Rossi"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="31dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_Surname"
+        app:layout_constraintLeft_toRightOf="@+id/textView_Surname" />
+
+    <EditText
+        android:id="@+id/editText_Age"
+        android:text="16/12/1970"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_Age"
+        app:layout_constraintLeft_toRightOf="@+id/textView_Age" />
+
+    <EditText
+        android:id="@+id/editText_PlaceBirth"
+        android:text="Turin"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_PlaceBirth"
+        app:layout_constraintLeft_toRightOf="@+id/textView_PlaceBirth" />
+
+    <EditText
+        android:id="@+id/editText_Number"
+        android:text="+41779807022"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_Number"
+        app:layout_constraintLeft_toRightOf="@+id/textView_Number" />
+
+    <Button
+        android:id="@+id/button_Next"
+        android:layout_width="110dp"
+        android:layout_height="72dp"
+        android:background="@drawable/shapebutton2"
+        android:text="NEXT"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintLeft_toRightOf="@+id/textView_Gender"
+    android:layout_marginLeft="37dp"
+    android:layout_marginTop="8dp"
+    app:layout_constraintTop_toBottomOf="@+id/editText_PlaceBirth">
+
+    <RadioButton
+        android:id="@+id/radioButton_M"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="M"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="258dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton_F"
+        android:checked="true"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="F"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="258dp" />
+</RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox_Pryv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you want to send data to PRYV?"
+        app:layout_constraintLeft_toRightOf="@+id/imageView3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Number" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="94dp"
+        android:layout_height="51dp"
+        app:srcCompat="@drawable/pryv"
+        android:layout_marginTop="59dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Number"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AnControl</string>
+    <string name="action_add_ip">Add new IP Address</string>
+    <string name="action_add_patient">Add Patient</string>
+    <string name="id">ID {name} </string>
+</resources>

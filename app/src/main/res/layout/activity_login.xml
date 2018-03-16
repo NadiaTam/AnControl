@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nadia.epfl.com.ancontrol.LoginActivity"
+    android:background="@drawable/background2">
+
+    <TextView
+        android:id="@+id/textView_password"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:fontFamily="casual"
+        android:text="Password"
+        android:textColor="@color/primary_material_light_1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintRight_toLeftOf="@+id/editText_password"
+        android:layout_marginTop="34dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_username"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="188dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ac"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="36dp"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="158dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView_username"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_username"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="154dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName|textPassword"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView_password"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_password"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:fontFamily="casual"
+        android:text="Username"
+        android:textColor="@color/primary_material_light_1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintRight_toLeftOf="@+id/editText_username"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/button_login"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/shapebutton2"
+        android:fontFamily="casual"
+        android:text="LOGIN"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView_password"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.508" />
+
+    <TextView
+        android:id="@+id/textView_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Attempts"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_password"
+        app:layout_constraintLeft_toLeftOf="@+id/textView_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/attempts_counter"
+        android:layout_width="55dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView_attempts"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_attempts" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginStart="13dp"
+        tools:layout_editor_absoluteX="569dp">
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

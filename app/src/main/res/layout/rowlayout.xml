@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <Button
+        android:id="@+id/buttonName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shapebutton2"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="casual"
+        android:clickable="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textview_ipAddress"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/buttonName" />
+
+    <TextView
+        android:id="@+id/textview_ipPort"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textview_ipAddress" />
+
+    <ImageButton
+        android:id="@+id/imageButton_Remove"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
