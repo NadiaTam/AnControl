@@ -1,3 +1,3 @@
 # AnControl
 Android Application for continuous monitoring in anesthesia practices. 
-The application allows to establish a connection on one hand with a Raspberry Pi and on the other hande to share data with a cloud platform.
+The application allows to establish a connection with a Raspberry Pi and to display data received on charts. In addition it is possible to share data on a cloud platform.
